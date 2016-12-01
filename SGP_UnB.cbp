@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SGP_UnB" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SGP_UnB" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SGP_UnB" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="include/Apresentacao.h" />
+		<Unit filename="include/Comandos.h" />
+		<Unit filename="include/Controladoras.h" />
+		<Unit filename="include/Dominio.h" />
+		<Unit filename="include/Entidade.h" />
+		<Unit filename="include/Interfaces.h" />
+		<Unit filename="include/Stubs.h" />
+		<Unit filename="include/TesteUnidade.h" />
+		<Unit filename="src/Apresentacao.cpp" />
+		<Unit filename="src/Controladoras.cpp" />
+		<Unit filename="src/Dominio.cpp" />
+		<Unit filename="src/Entidade.cpp" />
+		<Unit filename="src/Stubs.cpp" />
+		<Unit filename="src/TesteUnidade.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<DoxyBlocks>
+				<comment_style block="3" line="3" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

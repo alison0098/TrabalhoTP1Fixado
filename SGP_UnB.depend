@@ -1,0 +1,215 @@
+# depslib dependency file v1.0
+1479758294 source:c:\users\bonav\onedrive\documentos\computação\2-2016\trabalho_poo\sgp_unb\src\dominio.cpp
+	"Dominio.h"
+	<iostream>
+
+1480627724 
+
+1474432489 c:\users\bonav\onedrive\documentos\computação\2-2016\trabalho_poo\sgp_unb\include\dominio.h
+	<string>
+	<stdexcept>
+
+1480639784 >
+
+1480618009 source:c:\users\bonav\onedrive\documentos\computação\2-2016\trabalho_poo\sgp_unb\src\main.cpp
+	<iostream>
+	<string>
+	"TesteUnidade.h"
+	"Apresentacao.h"
+
+1480616360 cao.h"
+
+1474431262 source:c:\users\bonav\onedrive\documentos\computação\2-2016\trabalho_poo\sgp_unb\src\entidade.cpp
+	"Entidade.h"
+
+1480608736 h"
+
+1480622823 c:\users\bonav\onedrive\documentos\computação\2-2016\trabalho_poo\sgp_unb\include\entidade.h
+	<string>
+	<stdexcept>
+	"Dominio.h"
+
+1480608736 "
+
+1479758342 source:c:\users\bonav\onedrive\documentos\computação\2-2016\trabalho_poo\sgp_unb\src\testeunidade.cpp
+	"TesteUnidade.h"
+	<iostream>
+
+1474522276 c:\users\bonav\onedrive\documentos\computação\2-2016\trabalho_poo\sgp_unb\include\testeunidade.h
+	<string>
+	<stdexcept>
+	"Dominio.h"
+
+1480623159 source:c:\users\bonav\onedrive\documentos\computação\2-2016\trabalho_poo\sgp_unb\src\apresentacao.cpp
+	"Apresentacao.h"
+
+1480623151 c:\users\bonav\onedrive\documentos\computação\2-2016\trabalho_poo\sgp_unb\include\apresentacao.h
+	<iostream>
+	"Dominio.h"
+
+1480612759 source:/home/alison/xato/src/Apresentacao.cpp
+	"Apresentacao.h"
+
+1480612759 /home/alison/xato/include/Apresentacao.h
+	<iostream>
+	"Dominio.h"
+
+1480605135 /home/alison/xato/include/Dominio.h
+	<string>
+	<stdexcept>
+
+1480616360 source:c:\users\bonav\desktop\test\src\apresentacao.cpp
+	"Apresentacao.h"
+
+1480616360 c:\users\bonav\desktop\test\include\apresentacao.h
+	<iostream>
+	"Dominio.h"
+
+1480630846 c:\users\bonav\desktop\test\include\dominio.h
+	<string>
+	<stdexcept>
+
+1480639525 source:c:\users\bonav\desktop\test\src\controladoras.cpp
+	"Controladoras.h"
+
+1480639525 oras.h"
+
+1480627724 c:\users\bonav\desktop\test\include\controladoras.h
+	"Interfaces.h"
+	"Dominio.h"
+	<stdexcept>
+	<iostream>
+	<cstdlib>
+
+1480639784 c:\users\bonav\desktop\test\include\interfaces.h
+	"Dominio.h"
+	"Entidade.h"
+	"Comandos.h"
+	<stdexcept>
+
+1480639286 c:\users\bonav\desktop\test\include\entidade.h
+	<string>
+	<stdexcept>
+	"Dominio.h"
+
+1480623700 c:\users\bonav\desktop\test\include\comandos.h
+
+1480608736 source:c:\users\bonav\desktop\test\src\dominio.cpp
+	"Dominio.h"
+	<iostream>
+
+1480608736 source:c:\users\bonav\desktop\test\src\entidade.cpp
+	"Entidade.h"
+
+1480616360 source:c:\users\bonav\desktop\test\src\main.cpp
+	<iostream>
+	<string>
+	"TesteUnidade.h"
+	"Apresentacao.h"
+
+1480608736 c:\users\bonav\desktop\test\include\testeunidade.h
+	<string>
+	<stdexcept>
+	"Dominio.h"
+
+1480612760 source:/home/alison/Desktop/xato/src/Apresentacao.cpp
+	"Apresentacao.h"
+
+1480612760 /home/alison/Desktop/xato/include/Apresentacao.h
+	<iostream>
+	"Dominio.h"
+
+1480627246 /home/alison/Desktop/xato/include/Dominio.h
+	<string>
+	<stdexcept>
+
+1480605136 source:/home/alison/Desktop/xato/src/Dominio.cpp
+	"Dominio.h"
+	<iostream>
+
+1480605136 source:/home/alison/Desktop/xato/src/Entidade.cpp
+	"Entidade.h"
+
+1480635688 /home/alison/Desktop/xato/include/Entidade.h
+	<string>
+	<stdexcept>
+	"Dominio.h"
+
+1480612760 source:/home/alison/Desktop/xato/src/main.cpp
+	<iostream>
+	<string>
+	"TesteUnidade.h"
+	"Apresentacao.h"
+
+1480605136 /home/alison/Desktop/xato/include/TesteUnidade.h
+	<string>
+	<stdexcept>
+	"Dominio.h"
+
+1480616360 source:c:\users\bonav\desktop\test\xato\src\apresentacao.cpp
+	"Apresentacao.h"
+
+1480616360 c:\users\bonav\desktop\test\xato\include\apresentacao.h
+	<iostream>
+	"Dominio.h"
+
+1480630846 c:\users\bonav\desktop\test\xato\include\dominio.h
+	<string>
+	<stdexcept>
+
+1480608736 source:c:\users\bonav\desktop\test\xato\src\dominio.cpp
+	"Dominio.h"
+	<iostream>
+
+1480643210 source:c:\users\bonav\desktop\test\xato\src\entidade.cpp
+	"Entidade.h"
+
+1480643237 c:\users\bonav\desktop\test\xato\include\entidade.h
+	<string>
+	<stdexcept>
+	"Dominio.h"
+
+1480616360 source:c:\users\bonav\desktop\test\xato\src\main.cpp
+	<iostream>
+	<string>
+	"TesteUnidade.h"
+	"Apresentacao.h"
+
+1480608736 c:\users\bonav\desktop\test\xato\include\testeunidade.h
+	<string>
+	<stdexcept>
+	"Dominio.h"
+
+1480643138 source:c:\users\bonav\desktop\test\xato\src\controladoras.cpp
+	"Controladoras.h"
+	"Entidade.h"
+
+1480627724 c:\users\bonav\desktop\test\xato\include\controladoras.h
+	"Interfaces.h"
+	"Dominio.h"
+	<stdexcept>
+	<iostream>
+	<cstdlib>
+
+1480633304 c:\users\bonav\desktop\test\xato\include\interfaces.h
+	"Dominio.h"
+	"Entidade.h"
+	"Comandos.h"
+	<stdexcept>
+
+1480623700 c:\users\bonav\desktop\test\xato\include\comandos.h
+
+1480642741 source:c:\users\bonav\desktop\test\xato\src\stubs.cpp
+	"Stubs.h"
+	<string>
+
+1480642600 c:\users\bonav\desktop\test\xato\include\stubs.h
+	"Interfaces.h"
+	<stdexcept>
+	<iostream>
+	<typeinfo>
+
+1480608736 source:c:\users\bonav\desktop\test\xato\src\testeunidade.cpp
+	"TesteUnidade.h"
+	<iostream>
+
