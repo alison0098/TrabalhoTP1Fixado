@@ -127,6 +127,14 @@ class Projeto {
 
 
 };
+
+/*! \class Resultado
+    \brief Classe que contém os principais métodos da entidade de Resultado.
+
+    Contém os protótipos dos métodos da classe resultado referente às entidades do sistema.
+
+*/
+
 class Resultado {
 
 protected:
@@ -148,6 +156,13 @@ public:
     }
 };
 
+/*! \class ResultadoAutenticacao
+    \brief Classe que contém os principais métodos da entidade de Resultado de autenticacao.
+
+    Contém os protótipos dos métodos da classe ResultadoAutenticacao referente às entidades do sistema.
+
+*/
+
 class ResultadoAutenticacao:public Resultado {
 
 private:
@@ -162,6 +177,13 @@ public:
         return matricula;
     }
 };
+
+/*! \class ResultadoProjeto
+    \brief Classe que contém os principais métodos da entidade de Resultado de projeto.
+
+    Contém os protótipos dos métodos da classe resultado de projeto referente às entidades do sistema.
+
+*/
 
 class ResultadoProjeto:public Resultado {
 
@@ -178,6 +200,14 @@ public:
     }
 };
 
+/*! \class ResultadoGerenteProjeto
+    \brief Classe que contém os principais métodos da entidade de Resultado de Gerente de Projeto.
+
+    Contém os protótipos dos métodos da classe Resultado de gerente de projeto referente às entidades do sistema.
+
+*/
+
+
 class ResultadoGerenteProjeto:public Resultado {
 
 private:
@@ -193,6 +223,13 @@ public:
     }
 };
 
+/*! \class ResultadoGerenteSistema
+    \brief Classe que contém os principais métodos da entidade de resultado de gerente de sistema.
+
+    Contém os protótipos dos métodos da classe resultado de gerente de sistema referente às entidades do sistema.
+
+*/
+
 class ResultadoGerenteSistema:public Resultado {
 
 private:
@@ -207,6 +244,13 @@ public:
         return gerenteSistema;
     }
 };
+
+/*! \class ResultadoDesenvolvedor
+    \brief Classe que contém os principais métodos da entidade de Resultado de desenvolvedor.
+
+    Contém os protótipos dos métodos da classe resultado de desenvolvedor referente às entidades do sistema.
+
+*/
 
 class ResultadoDesenvolvedor:public Resultado {
 

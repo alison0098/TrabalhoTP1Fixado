@@ -8,10 +8,24 @@
 
 using namespace std;
 
+/*! \file Stubs.h
+    \brief Arquivo que contém as classes dos stubs.
+
+    O arquivo Stubs.h contém os protótipos de todas as classes que definem os Stubs referentes ao sistema.
+*/
+
+
 // EXEMPLO
 // --------------------------------------------------------
 
 // Declaração de classe stub da interface ILNAutenticacao.
+
+/*! \class StubLNAutenticacao
+    \brief Classe que contém os métodos dos stubs de autenticao.
+
+    Contém os protótipos dos métodos da classe de stub referente a autenticacao da logica de negocio.
+
+*/
 
 class StubLNAutenticacao:public ILNAutenticacao{  // classe implementa interface.
 
@@ -32,6 +46,14 @@ public:
 
 // Declaração de classe stub da interface ILNProjeto.
 
+
+/*! \class StubLNProjeto
+    \brief Classe que contém os métodos dos stubs de projeto.
+
+    Contém os protótipos dos métodos da classe de stub referente ao projeto da logica de negocio.
+
+*/
+
 class StubLNProjeto:public ILNProjeto{  // classe implementa a interface.
 
 public:
@@ -45,6 +67,14 @@ public:
 // --------------------------------------------------------
 
 // Declaração de classe stub da interface ILNGerenteProjeto.
+
+/*! \class StubLNGerente
+    \brief Classe que contém os métodos dos stubs de Gerente de projeto.
+
+    Contém os protótipos dos métodos da classe de stub referente ao gerente de projeto da logica de negocio.
+
+*/
+
 
 class StubLNGerenteProjeto:public ILNGerenteProjeto{  // classe implementa a interface.
 
@@ -60,6 +90,13 @@ public:
 
 // Declaração de classe stub da interface ILNGerenteSistema.
 
+/*! \class StubLNAGerente
+    \brief Classe que contém os métodos dos stubs de gerente de sistema.
+
+    Contém os protótipos dos métodos da classe de stub referente ao gerente de sistema da logica de negocio.
+
+*/
+
 class StubLNGerenteSistema:public ILNGerenteSistema{  // classe implementa a interface.
 
 public:
@@ -70,6 +107,13 @@ public:
 };
 
 // Declaração de classe stub da interface ILNDesenvolvedor.
+
+/*! \class StubLNAGerente
+    \brief Classe que contém os métodos dos stubs de desenvolvedor.
+
+    Contém os protótipos dos métodos da classe de stub referente ao desenvolvedor da logica de negocio.
+
+*/
 
 class StubLNDesenvolvedor:public ILNDesenvolvedor{  // classe implementa a interface.
 
@@ -85,6 +129,13 @@ public:
 // --------------------------------------------------------
 
 // Declaração de classe stub da interface IPersistencia.
+
+/*! \class StubPersistencia
+    \brief Classe que contém os métodos dos stubs de persistencia.
+
+    Contém os protótipos dos métodos da classe de stub referente a persistencia da logica de negocio.
+
+*/
 
 class StubPersistencia:public IPersistencia {
 

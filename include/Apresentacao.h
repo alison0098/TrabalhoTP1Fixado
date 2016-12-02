@@ -6,6 +6,12 @@
 
 using namespace std;
 
+/*! \file Apresentacao.h
+    \brief Arquivo que contém as classes do módulo de apresentacao.
+
+    O arquivo Apresentacao.h contém os protótipos das classes que definem a apresentaco do sistema.
+*/
+
 class Apresentacao{
 
     public:
