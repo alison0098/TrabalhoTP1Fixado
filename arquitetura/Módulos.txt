@@ -1,0 +1,4 @@
+Nosso software está estrutarado com as seguintes divisões,  camada de apresentação, camada de lógica négocio, e persistência.
+A Camada de apresentação é a camada mais próxima ao usuário, ou seja, é responsável pela comunicação entre o programa e o cliente, sendo responsável pelas telas que mostram a representação de dados já modelados.
+A camada de lógica de negócio lida com as requisições do usuário, fazendo as validações dos dados, processando as requisições, e selecionando as apresentações certas para a apresentação na camada de apresentação.
+A camada de persistência é responsável por armazenar e manipular em memória secundária os dados, para que possa haver um aproveitamento dos dados posteriormente ao encerramento da execução do programa. Como a persistência não constava como requisito, não a implementamos.
