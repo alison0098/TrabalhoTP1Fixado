@@ -2,6 +2,20 @@
 #include "Interfaces.h"
 #include "Stubs.h"
 
+/*! \file Builders.cpp
+    \brief Arquivo que implementa as classes do módulo Builder que faz a construção de objetos do sistema.
+
+    O arquivo Builders.cpp contém a implementação de todas as classes de Builders.h que permitem a criação dos objetos do sistema.
+*/
+
+
+/*! \fn IUGerenteProjeto* BuilderSubsistemaGerenteProjetoTeste::construir()
+    \brief Método que implementa a construção do teste de criação do Gerente de Projeto.
+
+    Contém a implementação do método da classe BuilderSubsistemaGerenteProjetoTeste em Builders.h referente aos construtores dos objetos do sistema.
+
+*/
+
 IUGerenteProjeto* BuilderSubsistemaGerenteProjetoTeste::construir(){
 
         IUGerenteProjeto   *cntrIUGerenteProjeto;
@@ -20,6 +34,13 @@ IUGerenteProjeto* BuilderSubsistemaGerenteProjetoTeste::construir(){
 
         return cntrIUGerenteProjeto;
 }
+
+/*! \fn IUGerenteSistema* BuilderSubsistemaGerenteSistemaTeste::construir()
+    \brief Método que implementa a construção do teste de criação do Gerente de Sistema.
+
+    Contém a implementação do método da classe BuilderSubsistemaGerenteSistemaTeste em Builders.h referente aos construtores dos objetos do sistema.
+
+*/
 
 IUGerenteSistema* BuilderSubsistemaGerenteSistemaTeste::construir(){
 
@@ -40,6 +61,14 @@ IUGerenteSistema* BuilderSubsistemaGerenteSistemaTeste::construir(){
         return cntrIUGerenteSistema;
 }
 
+
+/*! \fn IUProjeto* BuilderSubsistemaProjetoTeste::construir()
+    \brief Método que implementa a construção do teste de criação de projeto.
+
+    Contém a implementação do método da classe BuilderSubsistemaProjetoTeste em Builders.h referente aos construtores dos objetos do sistema.
+
+*/
+
 IUProjeto* BuilderSubsistemaProjetoTeste::construir(){
 
         IUProjeto   *cntrIUProjeto;
@@ -58,6 +87,13 @@ IUProjeto* BuilderSubsistemaProjetoTeste::construir(){
 
         return cntrIUProjeto;
 }
+
+/*! \fn IUDesenvolvedor* BuilderSubsistemaDesenvolvedorTeste::construir()
+    \brief Método que implementa a construção do teste de criação de desenvolvedor.
+
+    Contém a implementação do método da classe BuilderSubsistemaDesenvolvedorTeste em Builders.h referente aos construtores dos objetos do sistema.
+
+*/
 
 IUDesenvolvedor* BuilderSubsistemaDesenvolvedorTeste::construir(){
 
