@@ -1,3 +1,7 @@
+// ALUNOS: Alison de Miranda Peres              - > Mat.: 13/0038970
+//         Henrique Torres de Almeida Rodrigues - > Mat.: 11/0013085
+//         Vitor Bona de Faria                  - > Mat.: 12/0138042
+
 // Exemplos desenvolvidos para ilustrar a sintaxe da linguagem.
 
 #include <iostream>

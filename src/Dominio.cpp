@@ -290,22 +290,58 @@ void Telefone::isTelefoneValid(string telefone) throw (invalid_argument){
 
 // Métodos relativos à classe EstadoProjeto
 
+/*! \fn EstadoProjeto::EstadoProjeto()
+    \brief Método que implementa o construtor do Estado de Projeto sem parâmetros do dominio do sistema.
+
+    Contém a implementação do método construto Estado de Projeto em Dominio.h referente ao dominio do sistema.
+
+*/
+
 EstadoProjeto::EstadoProjeto(){
     estadoProjeto = 1;
 }
 
+/*! \fn Telefone::Telefone(string telefone)
+    \brief Método que implementa o construtor do Estado do Projeto do dominio do sistema.
+
+    Contém a implementação do método construtor EstadoProjeto(int estadoProjeto) em Dominio.h referente ao dominio do sistema.
+
+*/
+
 EstadoProjeto::EstadoProjeto(int estadoProjeto){
     this->estadoProjeto = estadoProjeto;
 }
+
+
+/*! \fn void EstadoProjeto::setEstadoProjeto(int estadoProjeto)
+    \brief Método que implementa o set Estado do projeto do dominio do sistema.
+
+    Contém a implementação do método set EstadoProjeto em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void EstadoProjeto::setEstadoProjeto(int estadoProjeto)   throw (invalid_argument){
     EstadoProjeto::isEstadoProjetoValid(estadoProjeto);
     this->estadoProjeto = estadoProjeto;
 }
 
+/*! \fn int EstadoProjeto::getEstadoProjeto()
+    \brief Método que implementa o get Estado do projeto do dominio do sistema.
+
+    Contém a implementação do método get EstadoProjeto em Dominio.h referente ao dominio do sistema.
+
+*/
+
 int EstadoProjeto::getEstadoProjeto() const{
     return estadoProjeto;
 }
+
+/*! \fn void EstadoProjeto::isEstadoProjetoValid(int estadoProjeto)
+    \brief Método que implementa o teste de Estado do projeto do dominio do sistema.
+
+    Contém a implementação do método de validação de estado do projeto em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void EstadoProjeto::isEstadoProjetoValid(int estadoProjeto)   throw (invalid_argument){
     if (!(estadoProjeto == 1 || estadoProjeto == 2)){
@@ -316,22 +352,57 @@ void EstadoProjeto::isEstadoProjetoValid(int estadoProjeto)   throw (invalid_arg
 
 // Métodos relativos à classe Fase
 
+/*! \fn Fase::Fase()
+    \brief Método que implementa o construtor do Fase de Projeto sem parâmetros do dominio do sistema.
+
+    Contém a implementação do método construto Fase de Projeto em Dominio.h referente ao dominio do sistema.
+
+*/
+
 Fase::Fase(){
     fase = 1;
 }
 
+/*! \fn Fase::Fase(int fase)
+    \brief Método que implementa o construtor do Fase do Projeto do dominio do sistema.
+
+    Contém a implementação do método construtor Fase(int fase) em Dominio.h referente ao dominio do sistema.
+
+*/
+
 Fase::Fase(int fase){
     this->fase = fase;
 }
+
+/*! \fn void Fase::setFase(int fase)
+    \brief Método que implementa o set Fase do projeto do dominio do sistema.
+
+    Contém a implementação do método set Fase em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Fase::setFase(int fase) throw (invalid_argument){
     Fase::isFaseValid(fase);
     this->fase = fase;
 }
 
+/*! \fn int Fase::getFase()
+    \brief Método que implementa o get Fase do projeto do dominio do sistema.
+
+    Contém a implementação do método get Fase em Dominio.h referente ao dominio do sistema.
+
+*/
+
 int Fase::getFase() const{
     return fase;
 }
+
+/*! \fn void Fase::isFaseValid(int fase)
+    \brief Método que implementa o teste de Fase do projeto do dominio do sistema.
+
+    Contém a implementação do método de validação de Fase do projeto em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Fase::isFaseValid(int fase) throw (invalid_argument){
     if (!(fase >= 1 && fase <= 4)){
@@ -342,22 +413,60 @@ void Fase::isFaseValid(int fase) throw (invalid_argument){
 
 // Métodos relativos à classe Funcao
 
+/*! \fn Funcao::Funcao()
+    \brief Método que implementa o construtor do Função sem parâmetros do dominio do sistema.
+
+    Contém a implementação do método construto função em Dominio.h referente ao dominio do sistema.
+
+*/
+
+
 Funcao::Funcao(){
     funcao = 1;
 }
 
+/*! \fn Funcao::Funcao(int funcao)
+    \brief Método que implementa o construtor do Função do dominio do sistema.
+
+    Contém a implementação do método construtor Funcao(int funcao) em Dominio.h referente ao dominio do sistema.
+
+*/
+
+
 Funcao::Funcao(int funcao){
     this->funcao = funcao;
 }
+
+/*! \fn void Funcao::setFuncao(int funcao)
+    \brief Método que implementa o set Função do dominio do sistema.
+
+    Contém a implementação do método set Função em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Funcao::setFuncao(int funcao) throw (invalid_argument){
     Funcao::isFuncaoValid(funcao);
     this->funcao = funcao;
 }
 
+/*! \fn int Funcao::getFuncao()
+    \brief Método que implementa o get Função do dominio do sistema.
+
+    Contém a implementação do método get Função em Dominio.h referente ao dominio do sistema.
+
+*/
+
 int Funcao::getFuncao() const{
     return funcao;
 }
+
+
+/*! \fn void Funcao::isFuncaoValid(int funcao)
+    \brief Método que implementa o teste de Função do dominio do sistema.
+
+    Contém a implementação do método de validação de Função em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Funcao::isFuncaoValid(int funcao) throw (invalid_argument){
     if (!(funcao >= 1 && funcao <= 3)){
@@ -368,22 +477,57 @@ void Funcao::isFuncaoValid(int funcao) throw (invalid_argument){
 
 // Métodos relativos à classe Matricula
 
+/*! \fn Matricula::Matricula()
+    \brief Método que implementa o construtor da Matrícula do dominio do sistema.
+
+    Contém a implementação do método construtor Matrícula() em Dominio.h referente ao dominio do sistema.
+
+*/
+
 Matricula::Matricula(){
     matricula = "12345";
 }
 
+/*! \fn Matricula::Matricula(string matricula)
+    \brief Método que implementa o construtor da Matrícula do dominio do sistema.
+
+    Contém a implementação do método construtor Matrícula(string matricula) em Dominio.h referente ao dominio do sistema.
+
+*/
+
 Matricula::Matricula(string matricula){
     this->matricula = matricula;
 }
+
+/*! \fn int Funcao::setMatricula(string matricula)
+    \brief Método que implementa o set Matrícula do dominio do sistema.
+
+    Contém a implementação do método set Matrícula em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Matricula::setMatricula(string matricula) throw (invalid_argument){
     Matricula::isMatriculaValid(matricula);
     this->matricula = matricula;
 }
 
+/*! \fn string Matricula::getMatricula()
+    \brief Método que implementa o get Matrícula do dominio do sistema.
+
+    Contém a implementação do método get Matrícula em Dominio.h referente ao dominio do sistema.
+
+*/
+
 string Matricula::getMatricula() const{
     return matricula;
 }
+
+/*! \fn void Matricula::isMatriculaValid(string matricula)
+    \brief Método que implementa o teste de Matrícula do dominio do sistema.
+
+    Contém a implementação do método de validação de Matrícula em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Matricula::isMatriculaValid(string matricula) throw (invalid_argument){
     if (matricula.length() == 5){
@@ -400,23 +544,57 @@ void Matricula::isMatriculaValid(string matricula) throw (invalid_argument){
 
 // Métodos relativos à classe Data
 
+/*! \fn Data::Data()
+    \brief Método que implementa o construtor da Data do dominio do sistema.
+
+    Contém a implementação do método construtor Data() em Dominio.h referente ao dominio do sistema.
+
+*/
 
 Data::Data(){
     data = "01/01/2016";
 }
 
+/*! \fn Data::Data(string data)
+    \brief Método que implementa o construtor da Data do dominio do sistema.
+
+    Contém a implementação do método construtor Data(string data) em Dominio.h referente ao dominio do sistema.
+
+*/
+
 Data::Data(string data){
     this->data = data;
 }
+
+/*! \fn void Data::setData(string data)
+    \brief Método que implementa o set Data do dominio do sistema.
+
+    Contém a implementação do método set Data em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Data::setData(string data) throw (invalid_argument){
     Data::isDataValid(data);
     this->data = data;
 }
 
+/*! \fn string Data::getData()
+    \brief Método que implementa o get Data do dominio do sistema.
+
+    Contém a implementação do método get Data em Dominio.h referente ao dominio do sistema.
+
+*/
+
 string Data::getData() const{
     return data;
 }
+
+/*! \fn void Data::isDataValid(string data)
+    \brief Método que implementa o teste de Data do dominio do sistema.
+
+    Contém a implementação do método de validação de Data em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Data::isDataValid(string data) throw (invalid_argument){
     if(data.size() != 10){
@@ -459,22 +637,59 @@ void Data::isDataValid(string data) throw (invalid_argument){
 
 // Métodos relativos à classe Email
 
+
+/*! \fn Email::Email()
+    \brief Método que implementa o construtor da Email do dominio do sistema.
+
+    Contém a implementação do método construtor Email() em Dominio.h referente ao dominio do sistema.
+
+*/
+
 Email::Email(){
     email = "email@exemplo.com";
 }
 
+/*! \fn Email::Email(string email)
+    \brief Método que implementa o construtor da Email do dominio do sistema.
+
+    Contém a implementação do método construtor Email(string email) em Dominio.h referente ao dominio do sistema.
+
+*/
+
 Email::Email(string email){
     this->email = email;
 }
+
+/*! \fn void Email::setEmail(string email)
+    \brief Método que implementa o set Email do dominio do sistema.
+
+    Contém a implementação do método set Email em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Email::setEmail(string email) throw (invalid_argument){
     Email::isEmailValid(email);
     this->email = email;
 }
 
+/*! \fn void Email::getEmail()
+    \brief Método que implementa o get Email do dominio do sistema.
+
+    Contém a implementação do método get Email em Dominio.h referente ao dominio do sistema.
+
+*/
+
 string Email::getEmail() const{
     return email;
 }
+
+
+/*! \fn void Email::isEmailValid(string email)
+    \brief Método que implementa o teste de Email do dominio do sistema.
+
+    Contém a implementação do método de validação de Email em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Email::isEmailValid(string email) throw (invalid_argument){
     if(email != "email@exemplo.com"){
@@ -485,22 +700,58 @@ void Email::isEmailValid(string email) throw (invalid_argument){
 
 //Métodos relativos à classe Custo
 
+
+/*! \fn Custo::Custo()
+    \brief Método que implementa o construtor da Custo de Projeto do dominio do sistema.
+
+    Contém a implementação do método construtor Custo() em Dominio.h referente ao dominio do sistema.
+
+*/
+
 Custo::Custo(){
     custo = 0.01;
 }
 
+/*! \fn Custo::Custo(double custo)
+    \brief Método que implementa o construtor da Custo de Projeto do dominio do sistema.
+
+    Contém a implementação do método construtor Custo(double custo) em Dominio.h referente ao dominio do sistema.
+
+*/
+
 Custo::Custo(double custo){
     this->custo = custo;
 }
+
+/*! \fn void Custo::setCusto(double custo)
+    \brief Método que implementa o set Custo de Projeto do dominio do sistema.
+
+    Contém a implementação do método set Custo em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Custo::setCusto(double custo) throw (invalid_argument){
     Custo::isCustoValid(custo);
     this->custo = custo;
 }
 
+/*! \fn void Custo::getCusto()
+    \brief Método que implementa o get Custo de Projeto do dominio do sistema.
+
+    Contém a implementação do método get Custo() em Dominio.h referente ao dominio do sistema.
+
+*/
+
 double Custo::getCusto() const{
     return custo;
 }
+
+/*! \fn void Custo::isCustoValid(double custo)
+    \brief Método que implementa o teste de Custo do dominio do sistema.
+
+    Contém a implementação do método de validação de Custo em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Custo::isCustoValid(double custo) throw (invalid_argument){
     if(custo <= 0.00){
