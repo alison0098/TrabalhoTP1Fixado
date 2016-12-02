@@ -8,10 +8,23 @@ const string StubLNAutenticacao::TRIGGER_ERRO_SISTEMA = "78901";
 
 using namespace std;
 
+/*! \file Stubs.cpp
+    \brief Arquivo que implementa as classes do módulo stub que faz a comunicação entre a logica de negocio com o a camada de persistencia.
+
+    O arquivo Stubs.cpp contém a implementação de todas as classes de Stubs.h que permitem a comunicação entre a lógica de negócio e a camada de persistencia.
+*/
+
 // EXEMPLO
 // --------------------------------------------------------
 
 // Definições de método da classe stub do controlador da lógica de negócio de autenticação.
+
+/*! \fn ResultadoAutenticacao StubLNAutenticacao::autenticar(const Matricula &matricula, const Senha &senha)
+    \brief Método que implementa a autenticacao da classe StubLNAutenticacao.
+
+    Contém a implementação do método autenticar da classe StubLNAutenticacao em Stub.h.
+
+*/
 
 ResultadoAutenticacao StubLNAutenticacao::autenticar(const Matricula &matricula, const Senha &senha) throw(runtime_error) {
 
@@ -44,6 +57,13 @@ ResultadoAutenticacao StubLNAutenticacao::autenticar(const Matricula &matricula,
 
 // Definições de método da classe stub da controladora da lógica de negócio de projeto.
 
+/*! \fn ResultadoProjeto StubLNProjeto::incluir(const Projeto &projeto)
+    \brief Método que implementa a inclusao da classe StubLNProjeto.
+
+    Contém a implementação do método inclur da classe StubLNProjeto em Stub.h.
+
+*/
+
 ResultadoProjeto StubLNProjeto::incluir(const Projeto &projeto) throw(runtime_error){
 
     // Apresentar dados recebidos.
@@ -62,6 +82,13 @@ ResultadoProjeto StubLNProjeto::incluir(const Projeto &projeto) throw(runtime_er
 
     return resultado;
 }
+
+/*! \fn ResultadoProjeto StubLNProjeto::remover(const CodigoProjeto &codigo)
+    \brief Método que implementa a remoção da classe StubLNProjeto.
+
+    Contém a implementação do método remover da classe StubLNProjeto em Stub.h.
+
+*/
 
 ResultadoProjeto StubLNProjeto::remover(const CodigoProjeto &codigo) throw(runtime_error) {
 
@@ -82,6 +109,13 @@ ResultadoProjeto StubLNProjeto::remover(const CodigoProjeto &codigo) throw(runti
     return resultado;
 }
 
+/*! \fn ResultadoProjeto StubLNProjeto::pesquisar(const CodigoProjeto &codigo)
+    \brief Método que implementa a pesquisa da classe StubLNProjeto.
+
+    Contém a implementação do método pesquisa da classe StubLNProjeto em Stub.h.
+
+*/
+
 ResultadoProjeto StubLNProjeto::pesquisar(const CodigoProjeto &codigo) throw(runtime_error) {
 
     // Apresentar dados recebidos.
@@ -100,6 +134,13 @@ ResultadoProjeto StubLNProjeto::pesquisar(const CodigoProjeto &codigo) throw(run
 
     return resultado;
 }
+
+/*! \fn ResultadoProjeto StubLNProjeto::editar(const Projeto &projeto)
+    \brief Método que implementa a editar da classe StubLNProjeto.
+
+    Contém a implementação do método editar da classe StubLNProjeto em Stub.h.
+
+*/
 
 ResultadoProjeto StubLNProjeto::editar(const Projeto &projeto) throw(runtime_error) {
 
@@ -125,6 +166,14 @@ ResultadoProjeto StubLNProjeto::editar(const Projeto &projeto) throw(runtime_err
 
 // Definições de método da classe stub da controladora da lógica de negócio de GerenteProjeto.
 
+/*! \fn ResultadoGerenteProjeto StubLNGerenteProjeto::incluir(const GerenteProjeto &GerenteProjeto)
+    \brief Método que implementa a inclusao da classe StubLNGerenteProjeto.
+
+    Contém a implementação do método incluir da classe  StubLNGerenteProjeto em Stub.h.
+
+*/
+
+
 ResultadoGerenteProjeto StubLNGerenteProjeto::incluir(const GerenteProjeto &GerenteProjeto) throw(runtime_error){
 
     // Apresentar dados recebidos.
@@ -143,6 +192,13 @@ ResultadoGerenteProjeto StubLNGerenteProjeto::incluir(const GerenteProjeto &Gere
 
     return resultado;
 }
+
+/*! \fn ResultadoGerenteProjeto StubLNGerenteProjeto::remover(const Matricula &matricula)
+    \brief Método que implementa a remoção da classe  StubLNGerenteProjeto.
+
+    Contém a implementação do método remover da classe StubLNGerenteProjeto em Stub.h.
+
+*/
 
 ResultadoGerenteProjeto StubLNGerenteProjeto::remover(const Matricula &matricula) throw(runtime_error) {
 
@@ -163,6 +219,13 @@ ResultadoGerenteProjeto StubLNGerenteProjeto::remover(const Matricula &matricula
     return resultado;
 }
 
+/*! \fn ResultadoGerenteProjeto StubLNGerenteProjeto::pesquisar(const Matricula &matricula)
+    \brief Método que implementa a pesquisa da classe  StubLNGerenteProjeto.
+
+    Contém a implementação do método pesquisar da classe StubLNGerenteProjeto em Stub.h.
+
+*/
+
 ResultadoGerenteProjeto StubLNGerenteProjeto::pesquisar(const Matricula &matricula) throw(runtime_error) {
 
     // Apresentar dados recebidos.
@@ -181,6 +244,13 @@ ResultadoGerenteProjeto StubLNGerenteProjeto::pesquisar(const Matricula &matricu
 
     return resultado;
 }
+
+/*! \fn ResultadoGerenteProjeto StubLNGerenteProjeto::editar(const GerenteProjeto &GerenteProjeto)
+    \brief Método que implementa a edição da classe  StubLNGerenteProjeto.
+
+    Contém a implementação do método editar da classe StubLNGerenteProjeto em Stub.h.
+
+*/
 
 ResultadoGerenteProjeto StubLNGerenteProjeto::editar(const GerenteProjeto &GerenteProjeto) throw(runtime_error) {
 
@@ -207,6 +277,13 @@ ResultadoGerenteProjeto StubLNGerenteProjeto::editar(const GerenteProjeto &Geren
 
 // Definições de método da classe stub da controladora da lógica de negócio de GerenteSistema.
 
+/*! \fn ResultadoGerenteSistema StubLNGerenteSistema::incluir(const GerenteSistema &GerenteSistema)
+    \brief Método que implementa a inclusao da classe StubLNGerenteSistema.
+
+    Contém a implementação do método incluir da classe StubLNGerenteSistema em Stub.h.
+
+*/
+
 ResultadoGerenteSistema StubLNGerenteSistema::incluir(const GerenteSistema &GerenteSistema) throw(runtime_error){
 
     // Apresentar dados recebidos.
@@ -225,6 +302,13 @@ ResultadoGerenteSistema StubLNGerenteSistema::incluir(const GerenteSistema &Gere
 
     return resultado;
 }
+
+/*! \fn ResultadoGerenteSistema StubLNGerenteSistema::remover(const Matricula &matricula)
+    \brief Método que implementa a remoção da classe StubLNGerenteSistema.
+
+    Contém a implementação do método remover da classe StubLNGerenteSistema em Stub.h.
+
+*/
 
 ResultadoGerenteSistema StubLNGerenteSistema::remover(const Matricula &matricula) throw(runtime_error) {
 
@@ -245,6 +329,13 @@ ResultadoGerenteSistema StubLNGerenteSistema::remover(const Matricula &matricula
     return resultado;
 }
 
+/*! \fn ResultadoGerenteSistema StubLNGerenteSistema::pesquisar(const Matricula &matricula)
+    \brief Método que implementa a pesquisa da classe StubLNGerenteSistema.
+
+    Contém a implementação do método pesquisar da classe StubLNGerenteSistema em Stub.h.
+
+*/
+
 ResultadoGerenteSistema StubLNGerenteSistema::pesquisar(const Matricula &matricula) throw(runtime_error) {
 
     // Apresentar dados recebidos.
@@ -263,6 +354,13 @@ ResultadoGerenteSistema StubLNGerenteSistema::pesquisar(const Matricula &matricu
 
     return resultado;
 }
+
+/*! \fn ResultadoGerenteSistema StubLNGerenteSistema::editar(const GerenteSistema &GerenteSistema)
+    \brief Método que implementa a edicao da classe StubLNGerenteSistema.
+
+    Contém a implementação do método editar da classe StubLNGerenteSistema em Stub.h.
+
+*/
 
 ResultadoGerenteSistema StubLNGerenteSistema::editar(const GerenteSistema &GerenteSistema) throw(runtime_error) {
 
@@ -287,6 +385,13 @@ ResultadoGerenteSistema StubLNGerenteSistema::editar(const GerenteSistema &Geren
 
 // Definições de método da classe stub da controladora da lógica de negócio de Desenvolvedor.
 
+/*! \fn ResultadoDesenvolvedor StubLNDesenvolvedor::incluir(const Desenvolvedor &Desenvolvedor)
+    \brief Método que implementa a inclusao da classe StubLNDesenvolvedor.
+
+    Contém a implementação do método incluir da classe StubLNDesenvolvedor em Stub.h.
+
+*/
+
 ResultadoDesenvolvedor StubLNDesenvolvedor::incluir(const Desenvolvedor &Desenvolvedor) throw(runtime_error){
 
     // Apresentar dados recebidos.
@@ -305,6 +410,13 @@ ResultadoDesenvolvedor StubLNDesenvolvedor::incluir(const Desenvolvedor &Desenvo
 
     return resultado;
 }
+
+/*! \fn ResultadoDesenvolvedor StubLNDesenvolvedor::remover(const Desenvolvedor &desenvolvedor)
+    \brief Método que implementa a remoção da classe StubLNDesenvolvedor.
+
+    Contém a implementação do método remover da classe StubLNDesenvolvedor em Stub.h.
+
+*/
 
 ResultadoDesenvolvedor StubLNDesenvolvedor::remover(const Matricula &matricula) throw(runtime_error) {
 
@@ -325,6 +437,13 @@ ResultadoDesenvolvedor StubLNDesenvolvedor::remover(const Matricula &matricula) 
     return resultado;
 }
 
+/*! \fn ResultadoDesenvolvedor StubLNDesenvolvedor::pesquisar(const Desenvolvedor &desenvolvedor)
+    \brief Método que implementa a pesquisa da classe StubLNDesenvolvedor.
+
+    Contém a implementação do método pesquisa da classe StubLNDesenvolvedor em Stub.h.
+
+*/
+
 ResultadoDesenvolvedor StubLNDesenvolvedor::pesquisar(const Matricula &matricula) throw(runtime_error) {
 
     // Apresentar dados recebidos.
@@ -343,6 +462,13 @@ ResultadoDesenvolvedor StubLNDesenvolvedor::pesquisar(const Matricula &matricula
 
     return resultado;
 }
+
+/*! \fn ResultadoDesenvolvedor StubLNDesenvolvedor::editar(const Desenvolvedor &desenvolvedor)
+    \brief Método que implementa a edição da classe StubLNDesenvolvedor.
+
+    Contém a implementação do método editar da classe StubLNDesenvolvedor em Stub.h.
+
+*/
 
 ResultadoDesenvolvedor StubLNDesenvolvedor::editar(const Desenvolvedor &desenvolvedor) throw(runtime_error) {
 
@@ -368,6 +494,13 @@ ResultadoDesenvolvedor StubLNDesenvolvedor::editar(const Desenvolvedor &desenvol
 // --------------------------------------------------------
 
 // Definições de método da classe stub da controladora de persistência.
+
+/*! \class StubPersistencia
+    \brief Classe que implementa os métodos dos stubs de persistencia.
+
+    Contém a impletação dos métodos da classe de stub referente a persistencia da logica de negocio.
+
+*/
 
 void StubPersistencia::executar (const ComandoBancoDados* comandoBancoDados) throw(runtime_error){
 

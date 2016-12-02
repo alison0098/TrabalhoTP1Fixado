@@ -83,10 +83,10 @@ ResultadoAutenticacao CntrIUAutenticacao::autenticar() throw(runtime_error) {
 // Definições de métodos da classe CntrIUProjeto.
 
 
-/*! \fn void CntrIUProjeto::executar
-    \brief Método que implementa a autenticacao da entidade de Resultado de autenticacao.
+/*! \fn void CntrIUProjeto::executar(const Matricula &matricula)
+    \brief Método que implementa a execução do projeto no sistema.
 
-    Contém a implementação do método da classe ResultadoAutenticacao em Entidades.h referente às entidades do sistema.
+    Contém a implementação do método executar da classe CntrIUProjeto em Entidades.h referente.
 
 */
 
@@ -133,6 +133,13 @@ void CntrIUProjeto::executar(const Matricula &matricula) throw(runtime_error){
     return;
 }
 
+/*! \fn void CntrIUProjeto::incluir()
+    \brief Método que implementa a inclusao de projeto no sistema.
+
+    Contém a implementação do método incluir da classe CntrIUProjeto em Controladoras.h.
+
+*/
+
 void CntrIUProjeto::incluir() throw(runtime_error){
 
     Projeto projeto;
@@ -147,6 +154,13 @@ void CntrIUProjeto::incluir() throw(runtime_error){
     // Processar resultado.
 
 }
+
+/*! \fn void CntrIUProjeto::remover()
+    \brief Método que implementa a remoção de projeto no sistema.
+
+    Contém a implementação do método remover da classe CntrIUProjeto em Controladoras.h.
+
+*/
 
 void CntrIUProjeto::remover() throw(runtime_error){
 
@@ -163,6 +177,13 @@ void CntrIUProjeto::remover() throw(runtime_error){
 
 }
 
+/*! \fn void CntrIUProjeto::pesquisar()
+    \brief Método que implementa a pesquisa de projeto no sistema.
+
+    Contém a implementação do método pesquisar da classe CntrIUProjeto em Controladoras.h.
+
+*/
+
 void CntrIUProjeto::pesquisar() throw(runtime_error){
 
     CodigoProjeto codigo;
@@ -178,6 +199,13 @@ void CntrIUProjeto::pesquisar() throw(runtime_error){
     // Processar resultado.
 
 }
+
+/*! \fn void CntrIUProjeto::editar()
+    \brief Método que implementa a edição de projeto no sistema.
+
+    Contém a implementação do método editar da classe CntrIUProjeto em Controladoras.h.
+
+*/
 
 void CntrIUProjeto::editar() throw(runtime_error){
 
@@ -198,6 +226,13 @@ void CntrIUProjeto::editar() throw(runtime_error){
 // --------------------------------------------------------
 
 // Definições de métodos da classe CntrIUGerenteProjeto.
+
+/*! \fn void CntrIUGerenteProjeto::executar(const Matricula &matricula)
+    \brief Método que implementa a execuçao de gerente de projeto no sistema.
+
+    Contém a implementação do método executar da classe CntrIUGerenteProjeto em Controladoras.h.
+
+*/
 
 void CntrIUGerenteProjeto::executar(const Matricula &matricula) throw(runtime_error){
 
@@ -240,11 +275,26 @@ void CntrIUGerenteProjeto::executar(const Matricula &matricula) throw(runtime_er
     return;
 }
 
+/*! \fn void CntrIUGerenteProjeto::incluir()
+    \brief Método que implementa a inclusao de gerente de projeto no sistema.
+
+    Contém a implementação do método incluir da classe CntrIUGerenteProjeto em Controladoras.h.
+
+*/
+
 void CntrIUGerenteProjeto::incluir() throw(runtime_error){
     CntrInclusao *cntr = new CntrInclusao();
     cntr->executar(cntrLNGerenteProjeto);
     delete cntr;
 }
+
+/*! \fn void CntrIUGerenteProjeto::incluir()
+    \brief Método que implementa a remoção de gerente de projeto no sistema.
+
+    Contém a implementação do método remover da classe CntrIUGerenteProjeto em Controladoras.h.
+
+*/
+
 
 void CntrIUGerenteProjeto::remover() throw(runtime_error){
     CntrRemocao *cntr = new CntrRemocao();
@@ -252,11 +302,27 @@ void CntrIUGerenteProjeto::remover() throw(runtime_error){
     delete cntr;
 }
 
+/*! \fn void CntrIUGerenteProjeto::pesquisar()
+    \brief Método que implementa a pesquisa de gerente de projeto no sistema.
+
+    Contém a implementação do método pesquisar da classe CntrIUGerenteProjeto em Controladoras.h.
+
+*/
+
+
 void CntrIUGerenteProjeto::pesquisar() throw(runtime_error){
     CntrPesquisa *cntr = new CntrPesquisa();
     cntr->executar(cntrLNGerenteProjeto);
     delete cntr;
 }
+
+/*! \fn void CntrIUGerenteProjeto::editar()
+    \brief Método que implementa a edição de gerente de projeto no sistema.
+
+    Contém a implementação do método editar da classe CntrIUGerenteProjeto em Controladoras.h.
+
+*/
+
 
 void CntrIUGerenteProjeto::editar() throw(runtime_error){
     CntrEdicao *cntr = new CntrEdicao();
@@ -268,6 +334,14 @@ void CntrIUGerenteProjeto::editar() throw(runtime_error){
 // --------------------------------------------------------
 
 // Definições de métodos das classes internas de CntrIUGerenteProjeto.
+
+/*! \fn void CntrIUGerenteProjeto::CntrEdicao::executar(ILNGerenteProjeto *cntrLNGerenteProjeto)
+    \brief Método que implementa a o metodo interno CntrEdicao de execuçao de gerente de projeto no sistema.
+
+    Contém a implementação do método executar interno da classe CntrIUGerenteProjeto::CntroEdicao em Controladoras.h.
+
+*/
+
 
 void CntrIUGerenteProjeto::CntrEdicao::executar(ILNGerenteProjeto *cntrLNGerenteProjeto) throw(runtime_error) {
 
@@ -284,6 +358,13 @@ void CntrIUGerenteProjeto::CntrEdicao::executar(ILNGerenteProjeto *cntrLNGerente
 
     // Processar resultado.
 }
+
+/*! \fn void CntrIUGerenteProjeto::CntrInclusao::executar(ILNGerenteProjeto *cntrLNGerenteProjeto)
+    \brief Método que implementa a o metodo interno CntrInclusao de execução de gerente de projeto no sistema.
+
+    Contém a implementação do método executar interno da classe CntrIUGerenteProjeto::CntroInclusao em Controladoras.h.
+
+*/
 
 void CntrIUGerenteProjeto::CntrInclusao::executar(ILNGerenteProjeto *cntrLNGerenteProjeto) throw(runtime_error) {
 
@@ -302,6 +383,14 @@ void CntrIUGerenteProjeto::CntrInclusao::executar(ILNGerenteProjeto *cntrLNGeren
 
 }
 
+/*! \fn void CntrIUGerenteProjeto::CntrPesquisa::executar(ILNGerenteProjeto *cntrLNGerenteProjeto)
+    \brief Método que implementa a o metodo interno CntrPesquisa de execução de gerente de projeto no sistema.
+
+    Contém a implementação do método executar interno da classe CntrIUGerenteProjeto::CntroPesquisa em Controladoras.h.
+
+*/
+
+
 void CntrIUGerenteProjeto::CntrPesquisa::executar(ILNGerenteProjeto *cntrLNGerenteProjeto) throw(runtime_error) {
 
     Matricula matricula;
@@ -318,6 +407,14 @@ void CntrIUGerenteProjeto::CntrPesquisa::executar(ILNGerenteProjeto *cntrLNGeren
     // Processar resultado.
 
 }
+
+
+/*! \fn void CntrIUGerenteProjeto::CntrRemocao::executar(ILNGerenteProjeto *cntrLNGerenteProjeto)
+    \brief Método que implementa a o metodo interno CntrRemocao de execução de gerente de projeto no sistema.
+
+    Contém a implementação do método executar interno da classe CntrIUGerenteProjeto::CntroRemocao em Controladoras.h.
+
+*/
 
 void CntrIUGerenteProjeto::CntrRemocao::executar(ILNGerenteProjeto *cntrLNGerenteProjeto) throw(runtime_error) {
 
@@ -341,6 +438,14 @@ void CntrIUGerenteProjeto::CntrRemocao::executar(ILNGerenteProjeto *cntrLNGerent
 // --------------------------------------------------------
 
 // Definições de métodos da classe CntrIUGerenteSistema.
+
+/*! \fn void CntrIUGerenteSistema::executar(const Matricula &matricula)
+    \brief Método que implementa a execuçao de gerente de sistema no sistema.
+
+    Contém a implementação do método executar da classe CntrIUGerenteSistema em Controladoras.h.
+
+*/
+
 
 void CntrIUGerenteSistema::executar(const Matricula &matricula) throw(runtime_error){
 
@@ -383,11 +488,26 @@ void CntrIUGerenteSistema::executar(const Matricula &matricula) throw(runtime_er
     return;
 }
 
+/*! \fn void CntrIUGerenteSistema::incluir()
+    \brief Método que implementa a inclusao de gerente de sistema no sistema.
+
+    Contém a implementação do método incluir da classe CntrIUGerenteSistema em Controladoras.h.
+
+*/
+
 void CntrIUGerenteSistema::incluir() throw(runtime_error){
     CntrInclusao *cntr = new CntrInclusao();
     cntr->executar(cntrLNGerenteSistema);
     delete cntr;
 }
+
+/*! \fn void CntrIUGerenteSistema::remover()
+    \brief Método que implementa a remocao de gerente de sistema no sistema.
+
+    Contém a implementação do método remover da classe CntrIUGerenteSistema em Controladoras.h.
+
+*/
+
 
 void CntrIUGerenteSistema::remover() throw(runtime_error){
     CntrRemocao *cntr = new CntrRemocao();
@@ -395,11 +515,25 @@ void CntrIUGerenteSistema::remover() throw(runtime_error){
     delete cntr;
 }
 
+/*! \fn void CntrIUGerenteSistema::pesquisar()
+    \brief Método que implementa a pesquisa de gerente de sistema no sistema.
+
+    Contém a implementação do método pesquisar da classe CntrIUGerenteSistema em Controladoras.h.
+
+*/
+
 void CntrIUGerenteSistema::pesquisar() throw(runtime_error){
     CntrPesquisa *cntr = new CntrPesquisa();
     cntr->executar(cntrLNGerenteSistema);
     delete cntr;
 }
+
+/*! \fn void CntrIUGerenteSistema::editar()
+    \brief Método que implementa a edicao de gerente de sistema no sistema.
+
+    Contém a implementação do método editar da classe CntrIUGerenteSistema em Controladoras.h.
+
+*/
 
 void CntrIUGerenteSistema::editar() throw(runtime_error){
     CntrEdicao *cntr = new CntrEdicao();
@@ -411,6 +545,13 @@ void CntrIUGerenteSistema::editar() throw(runtime_error){
 // --------------------------------------------------------
 
 // Definições de métodos das classes internas de CntrIUGerenteSistema.
+
+/*! \fn void CntrIUGerenteSistema::CntrEdicao::executar(ILNGerenteSistema *cntrLNGerenteSistema)
+    \brief Método que implementa o metodo interno CntrEdicao de execução de gerente de sistema no sistema.
+
+    Contém a implementação do método executar interno da classe CntrIUGerenteSistema::CntroEdicao em Controladoras.h.
+
+*/
 
 void CntrIUGerenteSistema::CntrEdicao::executar(ILNGerenteSistema *cntrLNGerenteSistema) throw(runtime_error) {
 
@@ -427,6 +568,13 @@ void CntrIUGerenteSistema::CntrEdicao::executar(ILNGerenteSistema *cntrLNGerente
 
     // Processar resultado.
 }
+
+/*! \fn void CntrIUGerenteSistema::CntrInclusao::executar(ILNGerenteSistema *cntrLNGerenteSistema)
+    \brief Método que implementa o metodo interno CntrInclusao de execução de gerente de sistema no sistema.
+
+    Contém a implementação do método executar interno da classe CntrIUGerenteSistema::CntroInclusao em Controladoras.h.
+
+*/
 
 void CntrIUGerenteSistema::CntrInclusao::executar(ILNGerenteSistema *cntrLNGerenteSistema) throw(runtime_error) {
 
@@ -445,6 +593,13 @@ void CntrIUGerenteSistema::CntrInclusao::executar(ILNGerenteSistema *cntrLNGeren
 
 }
 
+/*! \fn void CntrIUGerenteSistema::CntrPesquisa::executar(ILNGerenteSistema *cntrLNGerenteSistema)
+    \brief Método que implementa o metodo interno CntrPesquisa de execução de gerente de sistema no sistema.
+
+    Contém a implementação do método executar interno da classe CntrIUGerenteSistema::CntroPesquisa em Controladoras.h.
+
+*/
+
 void CntrIUGerenteSistema::CntrPesquisa::executar(ILNGerenteSistema *cntrLNGerenteSistema) throw(runtime_error) {
 
     Matricula matricula;
@@ -461,6 +616,13 @@ void CntrIUGerenteSistema::CntrPesquisa::executar(ILNGerenteSistema *cntrLNGeren
     // Processar resultado.
 
 }
+
+/*! \fn void CntrIUGerenteSistema::CntrRemocao::executar(ILNGerenteSistema *cntrLNGerenteSistema)
+    \brief Método que implementa o metodo interno CntrRemocao de execução de gerente de sistema no sistema.
+
+    Contém a implementação do método executar interno da classe CntrIUGerenteSistema::CntroRemocao em Controladoras.h.
+
+*/
 
 void CntrIUGerenteSistema::CntrRemocao::executar(ILNGerenteSistema *cntrLNGerenteSistema) throw(runtime_error) {
 
@@ -488,9 +650,24 @@ void CntrIUGerenteSistema::CntrRemocao::executar(ILNGerenteSistema *cntrLNGerent
 
 // Em uma implementação real, o método precisaria estar codificados.
 
+/*! \fn void CntrIUDesenvolvedor::executar(const Matricula &matricula)
+    \brief Método que implementa a execuçao de desenvolvedor no sistema.
+
+    Contém a implementação do método executar da classe CntrIUDesenvolvedor em Controladoras.h.
+
+*/
+
+
 void CntrIUDesenvolvedor::executar(const Matricula &matricula) throw(runtime_error){
 
 }
+
+/*! \fn void CntrIUDesenvolvedor::setCntrLNDesenvolvedor(ILNDesenvolvedor *cntrLNDesenvolvedor)
+    \brief Método que implementa o construtor de desenvolvedor no sistema.
+
+    Contém a implementação do método construtor da classe CntrIUDesenvolvedor em Controladoras.h.
+
+*/
 
 void CntrIUDesenvolvedor::setCntrLNDesenvolvedor(ILNDesenvolvedor *cntrLNDesenvolvedor) {
     this->cntrLNDesenvolvedor = cntrLNDesenvolvedor;
