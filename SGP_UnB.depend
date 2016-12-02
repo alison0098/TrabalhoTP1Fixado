@@ -274,21 +274,25 @@
 	<iostream>
 	<cstdlib>
 
-1480650961 source:c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\src\main.cpp
+1480654557 source:c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\src\main.cpp
 	<iostream>
 	<string>
+	<stdexcept>
+	"Dominio.h"
 	"TesteUnidade.h"
 	"Apresentacao.h"
 	"Interfaces.h"
 	"Stubs.h"
 	"Controladoras.h"
+	"Builders.h"
+	"Comandos.h"
 
 1480651492 source:c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\src\builders.cpp
 	"Builders.h"
 	"Interfaces.h"
 	"Stubs.h"
 
-1480651319 c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\include\builders.h
+1480654688 c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\include\builders.h
 	"Interfaces.h"
 	"Dominio.h"
 	"Interfaces.h"
