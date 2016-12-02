@@ -236,7 +236,7 @@
 	<stdexcept>
 	"Dominio.h"
 
-1480651971 source:c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\src\stubs.cpp
+1480652225 source:c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\src\stubs.cpp
 	"Stubs.h"
 	<string>
 
@@ -263,7 +263,7 @@
 	<stdexcept>
 	"Dominio.h"
 
-1480649134 source:c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\src\controladoras.cpp
+1480652225 source:c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\src\controladoras.cpp
 	"Controladoras.h"
 	"Entidade.h"
 
