@@ -1,6 +1,13 @@
 #include "Controladoras.h"
 #include "Entidade.h"
 
+
+/*! \file Controladoras.cpp
+    \brief Arquivo que implementa as classes do módulo que faz a comunicação entre a interface com o a lógica de negocio.
+
+    O arquivo Controladoras.cpp contém a implementação de todas as classes de Controladoras.h e entidades.h que permitem a comunicação entre a interface de usuário e a lógica de negócio.
+*/
+
 // Alocação e inicializações de variáveis estáticas.
 
 CntrIUDesenvolvedor * CntrIUDesenvolvedor::referencia = 0;
@@ -9,6 +16,14 @@ CntrIUDesenvolvedor * CntrIUDesenvolvedor::referencia = 0;
 // --------------------------------------------------------
 
 // Definições de métodos da classe CntrIUAutenticacao.
+
+/*! \fn ResultadoAutenticacao CntrIUAutenticacao::autenticar()
+    \brief Método que implementa a autenticacao da entidade de Resultado de autenticacao.
+
+    Contém a implementação do método da classe ResultadoAutenticacao em Entidades.h referente às entidades do sistema.
+
+*/
+
 
 ResultadoAutenticacao CntrIUAutenticacao::autenticar() throw(runtime_error) {
 
@@ -53,6 +68,16 @@ ResultadoAutenticacao CntrIUAutenticacao::autenticar() throw(runtime_error) {
 // --------------------------------------------------------
 
 // Definições de métodos da classe CntrIUProjeto.
+
+
+/*! \fn void CntrIUProjeto::executar
+    \brief Método que implementa a autenticacao da entidade de Resultado de autenticacao.
+
+    Contém a implementação do método da classe ResultadoAutenticacao em Entidades.h referente às entidades do sistema.
+
+*/
+
+
 
 void CntrIUProjeto::executar(const Matricula &matricula) throw(runtime_error){
 

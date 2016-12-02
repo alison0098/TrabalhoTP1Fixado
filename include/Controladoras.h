@@ -11,9 +11,9 @@
 using namespace std;
 
 /*! \file Controladoras.h
-    \brief Arquivo que contém as classes do módulo de interface com o usuário.
+    \brief Arquivo que contém as classes do módulo que faz a comunicação entre a interface com o a lógica de negocio.
 
-    O arquivo Controladoras.h contém os protótipos de todas as classes que definem a interface com o usuário.
+    O arquivo Controladoras.h contém os protótipos de todas as classes que permitem a comunicação entre a interface de usuário e a lógica de negócio.
 */
 
 // EXEMPLO
