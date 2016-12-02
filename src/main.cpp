@@ -149,25 +149,97 @@ int main()
 
     ComandoBancoDados *comandoBancoDados;
 
-    comandoBancoDados = new ComandoIncluirGerente();
+    comandoBancoDados = new ComandoIncluirGerenteProjeto();
 
     cntrPersistencia->executar(comandoBancoDados);
 
     delete comandoBancoDados;
 
-    comandoBancoDados = new ComandoRemoverGerente();
+    comandoBancoDados = new ComandoRemoverGerenteProjeto();
 
     cntrPersistencia->executar(comandoBancoDados);
 
     delete comandoBancoDados;
 
-    comandoBancoDados = new ComandoEditarGerente();
+    comandoBancoDados = new ComandoEditarGerenteProjeto();
 
     cntrPersistencia->executar(comandoBancoDados);
 
     delete comandoBancoDados;
 
-    comandoBancoDados = new ComandoRecuperarGerente();
+    comandoBancoDados = new ComandoRecuperarGerenteProjeto();
+
+    cntrPersistencia->executar(comandoBancoDados);
+
+    // Cria comandos e invoca o stub.
+
+    comandoBancoDados = new ComandoIncluirGerenteSistema();
+
+    cntrPersistencia->executar(comandoBancoDados);
+
+    delete comandoBancoDados;
+
+    comandoBancoDados = new ComandoRemoverGerenteSistema();
+
+    cntrPersistencia->executar(comandoBancoDados);
+
+    delete comandoBancoDados;
+
+    comandoBancoDados = new ComandoEditarGerenteSistema();
+
+    cntrPersistencia->executar(comandoBancoDados);
+
+    delete comandoBancoDados;
+
+    comandoBancoDados = new ComandoRecuperarGerenteSistema();
+
+    cntrPersistencia->executar(comandoBancoDados);
+
+    // Cria comandos e invoca o stub.
+
+    comandoBancoDados = new ComandoIncluirProjeto();
+
+    cntrPersistencia->executar(comandoBancoDados);
+
+    delete comandoBancoDados;
+
+    comandoBancoDados = new ComandoRemoverProjeto();
+
+    cntrPersistencia->executar(comandoBancoDados);
+
+    delete comandoBancoDados;
+
+    comandoBancoDados = new ComandoEditarProjeto();
+
+    cntrPersistencia->executar(comandoBancoDados);
+
+    delete comandoBancoDados;
+
+    comandoBancoDados = new ComandoRecuperarProjeto();
+
+    cntrPersistencia->executar(comandoBancoDados);
+
+    // Cria comandos e invoca o stub.
+
+    comandoBancoDados = new ComandoIncluirDesenvolvedor();
+
+    cntrPersistencia->executar(comandoBancoDados);
+
+    delete comandoBancoDados;
+
+    comandoBancoDados = new ComandoRemoverDesenvolvedor();
+
+    cntrPersistencia->executar(comandoBancoDados);
+
+    delete comandoBancoDados;
+
+    comandoBancoDados = new ComandoEditarDesenvolvedor();
+
+    cntrPersistencia->executar(comandoBancoDados);
+
+    delete comandoBancoDados;
+
+    comandoBancoDados = new ComandoRecuperarDesenvolvedor();
 
     cntrPersistencia->executar(comandoBancoDados);
 
