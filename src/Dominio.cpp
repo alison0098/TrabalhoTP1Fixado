@@ -10,23 +10,59 @@
 
 // Métodos relativos à classe Nome
 
+/*! \fn Nome::Nome()
+    \brief Método que implementa o construtor do nome sem parâmetros do dominio do sistema.
+
+    Contém a implementação do método construto nome() em Dominio.h referente ao dominio do sistema.
+
+*/
 
 Nome::Nome(){
     nome = "Nome Qualquer";
 }
 
+
+/*! \fn Nome::Nome(string nome)
+    \brief Método que implementa o construtor do nome do dominio do sistema.
+
+    Contém a implementação do método construtor nome(string nome) em Dominio.h referente ao dominio do sistema.
+
+*/
+
 Nome::Nome(string nome){
     this->nome = nome;
 }
+
+
+/*! \fn void Nome::setNome(string nome)
+    \brief Método que implementa o set nome do dominio do sistema.
+
+    Contém a implementação do método set nome em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Nome::setNome(string nome)  throw (invalid_argument){
     Nome::isNomeValid(nome);
     this->nome = nome;
 }
 
+/*! \fn string Nome::getNome()
+    \brief Método que implementa o get nome do dominio do sistema.
+
+    Contém a implementação do método get nome em Dominio.h referente ao dominio do sistema.
+
+*/
+
 string Nome::getNome() const{
     return nome;
 }
+
+/*! \fn void Nome::isNomeValid(string nome)
+    \brief Método que implementa o teste de nome do dominio do sistema.
+
+    Contém a implementação do método de validação de nome em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Nome::isNomeValid(string nome) throw (invalid_argument){
     if (nome.length() <= 20){
@@ -46,22 +82,59 @@ void Nome::isNomeValid(string nome) throw (invalid_argument){
 
 // Métodos relativos à classe Senha
 
+/*! \fn Senha::Senha()
+    \brief Método que implementa o construtor do senha sem parâmetros do dominio do sistema.
+
+    Contém a implementação do método construto senha() em Dominio.h referente ao dominio do sistema.
+
+*/
+
+
 Senha::Senha(){
     senha = "12345";
 }
 
+/*! \fn Senha::Senha(string senha)
+    \brief Método que implementa o construtor da senha do dominio do sistema.
+
+    Contém a implementação do método construtor senha(string senha) em Dominio.h referente ao dominio do sistema.
+
+*/
+
 Senha::Senha(string senha){
     this->senha = senha;
 }
+
+/*! \fn void Senha::setSenha(string senha)
+    \brief Método que implementa o set senha do dominio do sistema.
+
+    Contém a implementação do método set senha em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Senha::setSenha(string senha) throw (invalid_argument){
     Senha::isSenhaValid(senha);
     this->senha = senha;
 }
 
+
+/*! \fn void Senha::getSenha()
+    \brief Método que implementa o get senha do dominio do sistema.
+
+    Contém a implementação do método get senha em Dominio.h referente ao dominio do sistema.
+
+*/
+
 string Senha::getSenha() const{
     return senha;
 }
+
+/*! \fn void Senha::isSenhaValid(string senha)
+    \brief Método que implementa o teste de senha do dominio do sistema.
+
+    Contém a implementação do método de validação de senha em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Senha::isSenhaValid(string senha) throw (invalid_argument){
     if (senha.length() == 5){
@@ -82,22 +155,57 @@ void Senha::isSenhaValid(string senha) throw (invalid_argument){
 
 // Métodos relativos à classe CodigoProjeto
 
+/*! \fn CodigoProjeto::CodigoProjeto()
+    \brief Método que implementa o construtor do codigo do projeto sem parâmetros do dominio do sistema.
+
+    Contém a implementação do método construto CodigoProjeto() em Dominio.h referente ao dominio do sistema.
+
+*/
+
 CodigoProjeto::CodigoProjeto(){
     codigoProjeto = "RANDM";
 }
 
+/*! \fn CodigoProjeto::CodigoProjeto(string codigoProjeto)
+    \brief Método que implementa o construtor do codigo de projeto do dominio do sistema.
+
+    Contém a implementação do método construtor CodigoProjeto(string codigoProjeto) em Dominio.h referente ao dominio do sistema.
+
+*/
+
 CodigoProjeto::CodigoProjeto(string codigoProjeto){
     this->codigoProjeto = codigoProjeto;
 }
+
+/*! \fn void CodigoProjeto::setCodigoProjeto(string codigoProjeto)
+    \brief Método que implementa o set Codigo de Projeto do dominio do sistema.
+
+    Contém a implementação do método set CodigoProjeto em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void CodigoProjeto::setCodigoProjeto(string codigoProjeto)  throw (invalid_argument){
     CodigoProjeto::isCodigoProjetoValid(codigoProjeto);
     this->codigoProjeto = codigoProjeto;
 }
 
+/*! \fn string CodigoProjeto::getCodigoProjeto()
+    \brief Método que implementa o get Codigo de projeto do dominio do sistema.
+
+    Contém a implementação do método get CodigoProjeto em Dominio.h referente ao dominio do sistema.
+
+*/
+
 string CodigoProjeto::getCodigoProjeto() const{
     return codigoProjeto;
 }
+
+/*! \fn void CodigoProjeto::isCodigoProjetoValid(string codigoProjeto)
+    \brief Método que implementa o teste de codigo de projeto do dominio do sistema.
+
+    Contém a implementação do método de validação de Codigo Projeto em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void CodigoProjeto::isCodigoProjetoValid(string codigoProjeto)  throw (invalid_argument){
     if (codigoProjeto.length() == 5){
@@ -114,22 +222,58 @@ void CodigoProjeto::isCodigoProjetoValid(string codigoProjeto)  throw (invalid_a
 
 // Métodos relativos à classe Telefone
 
+/*! \fn Telefone::Telefone()
+    \brief Método que implementa o construtor do Telefone sem parâmetros do dominio do sistema.
+
+    Contém a implementação do método construto Telefone() em Dominio.h referente ao dominio do sistema.
+
+*/
+
 Telefone::Telefone(){
     telefone = "12345678";
 }
 
+/*! \fn Telefone::Telefone(string telefone)
+    \brief Método que implementa o construtor do Tefelone do dominio do sistema.
+
+    Contém a implementação do método construtor Telefone(string telefone) em Dominio.h referente ao dominio do sistema.
+
+*/
+
 Telefone::Telefone(string telefone){
     this->telefone = telefone;
 }
+
+/*! \fn void Telefone::setTelefone(string telefone)
+    \brief Método que implementa o set Telefone do dominio do sistema.
+
+    Contém a implementação do método set Telefone em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Telefone::setTelefone(string telefone)  throw (invalid_argument){
     Telefone::isTelefoneValid(telefone);
     this->telefone = telefone;
 }
 
+/*! \fn string Telefone::getTelefone()
+    \brief Método que implementa o get Telefone do dominio do sistema.
+
+    Contém a implementação do método get Telefone em Dominio.h referente ao dominio do sistema.
+
+*/
+
 string Telefone::getTelefone() const{
     return telefone;
 }
+
+
+/*! \fn void Telefone::isTelefoneValid(string telefone)
+    \brief Método que implementa o teste de telefone do dominio do sistema.
+
+    Contém a implementação do método de validação de Telefone em Dominio.h referente ao dominio do sistema.
+
+*/
 
 void Telefone::isTelefoneValid(string telefone) throw (invalid_argument){
     if (telefone.length() == 8){
