@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['matricula',['Matricula',['../class_matricula.html',1,'']]]
+  ['gerenteprojeto',['GerenteProjeto',['../class_gerente_projeto.html',1,'']]],
+  ['gerentesistema',['GerenteSistema',['../class_gerente_sistema.html',1,'']]]
 ];

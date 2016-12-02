@@ -10,7 +10,6 @@
 
 #include "Dominio.h"
 #include "TesteUnidade.h"
-#include "Apresentacao.h"
 #include "Interfaces.h"
 #include "Stubs.h"
 #include "Controladoras.h"
