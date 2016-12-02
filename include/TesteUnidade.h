@@ -86,8 +86,7 @@ class TUSenha{
 
     private:
 
-        const static string VALOR_VALIDO;
-        const static string VALOR_INVALIDO;
+
 
         Senha *senha;
 
@@ -122,6 +121,9 @@ class TUSenha{
         void testarCenarioFalha();
 
     public:
+
+        const static string VALOR_VALIDO;
+        const static string VALOR_INVALIDO;
 
         /*! \var const static int SUCESSO
             \brief Constante única da classe que indica sucesso do teste.
@@ -465,8 +467,7 @@ class TUMatricula{
 
     private:
 
-        const static string VALOR_VALIDO;
-        const static string VALOR_INVALIDO;
+
 
         Matricula *matricula;
 
@@ -501,6 +502,8 @@ class TUMatricula{
         void testarCenarioFalha();
 
     public:
+        const static string VALOR_VALIDO;
+        const static string VALOR_INVALIDO;
 
         /*! \var const static int SUCESSO
             \brief Constante única da classe que indica sucesso do teste.

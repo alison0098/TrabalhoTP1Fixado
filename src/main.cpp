@@ -4,96 +4,29 @@
 #include <string>
 #include "TesteUnidade.h"
 #include "Apresentacao.h"
+#include "Interfaces.h"
+#include "Stubs.h"
+#include "Controladoras.h"
 
 using namespace std;
 
 int main()
 {
+    // Ligação entre controladora de autenticação e stub de negócio.
 
-   //Segue abaixo a execu��o dos testes de unidade.
+    CntrIUAutenticacao  *cntrIUAutenticacao = new CntrIUAutenticacao();
+    ILNAutenticacao *stubLNAutenticacao = new StubLNAutenticacao();
 
+    // Liga (link) instância de controladora a instância de stub.
 
-   //Testes de unidade dos Dominios
-   TUNome testeNome;
-   TUSenha testeSenha;
-   TUCodigoProjeto testeCodigoProjeto;
-   TUTelefone testeTelefone;
-   TUEstadoProjeto testeEstadoProjeto;
-   TUFase testeFase;
-   TUFuncao testeFuncao;
-   TUMatricula testeMatricula;
-   TUData testeData;
-   TUEmail testeEmail;
-   TUCusto testeCusto;
-   Opening opening;
+    cntrIUAutenticacao->setCntrLNAutenticacao(stubLNAutenticacao);
 
-   if(testeNome.run() == TUNome::FALHA){
-        cout << "Falha no teste de Unidade de Nome." << endl;
-   }else{
-        cout << "Sucesso no teste de Unidade de Nome." << endl;
-   }
+    // Para facilitar o teste informa os valores inválidos.
 
-    if(testeSenha.run() == TUNome::FALHA){
-        cout << "Falha no teste de Unidade de Senha." << endl;
-   }else{
-        cout << "Sucesso no teste de Unidade de Senha." << endl;
-   }
-
-   if(testeCodigoProjeto.run() == TUCodigoProjeto::FALHA){
-        cout << "Falha no teste de Unidade de Codigo de Projeto." << endl;
-   }else{
-        cout << "Sucesso no teste de Unidade de Codigo de Projeto." << endl;
-   }
-
-    if(testeTelefone.run() == TUTelefone::FALHA){
-        cout << "Falha no teste de Unidade de Telefone." << endl;
-   }else{
-        cout << "Sucesso no teste de Unidade de Telefone." << endl;
-   }
-
-   if(testeEstadoProjeto.run() == TUEstadoProjeto::FALHA){
-        cout << "Falha no teste de Unidade de Estado de Projeto." << endl;
-   }else{
-        cout << "Sucesso no teste de Unidade de Estado de Projeto." << endl;
-   }
-
-    if(testeFase.run() == TUFase::FALHA){
-        cout << "Falha no teste de Unidade de Fase." << endl;
-   }else{
-        cout << "Sucesso no teste de Unidade de Fase." << endl;
-   }
-
-    if(testeFuncao.run() == TUFuncao::FALHA){
-        cout << "Falha no teste de Unidade de Funcao." << endl;
-   }else{
-        cout << "Sucesso no teste de Unidade de Funcao." << endl;
-   }
-
-    if(testeMatricula.run() == TUMatricula::FALHA){
-        cout << "Falha no teste de Unidade de Matricula." << endl;
-   }else{
-        cout << "Sucesso no teste de Unidade de Matricula." << endl;
-   }
-
-    if(testeData.run() == TUData::FALHA){
-        cout << "Falha no teste de Unidade de Data." << endl;
-   }else{
-        cout << "Sucesso no teste de Unidade de Data." << endl;
-   }
-
-    if(testeEmail.run() == TUEmail::FALHA){
-        cout << "Falha no teste de Unidade de Email." << endl;
-   }else{
-        cout << "Sucesso no teste de Unidade de Email." << endl;
-   }
-
-    if(testeCusto.run() == TUCusto::FALHA){
-        cout << "Falha no teste de Unidade de Custo." << endl;
-   }else{
-        cout << "Sucesso no teste de Unidade de Custo." << endl;
-   }
-
-
-    opening.executar();
+    cout << endl << "VALORES DOS TRIGGERS:" << endl << endl;
+    cout << "Matricula invalida          = " << TUMatricula::VALOR_INVALIDO << endl;
+    cout << "Senha invalida              = " << TUSenha::VALOR_INVALIDO << endl;
+    cout << "Trigger de falha            = " << StubLNAutenticacao::TRIGGER_FALHA << endl;
+    cout << "Trigger de erro de sistema  = " << StubLNAutenticacao::TRIGGER_ERRO_SISTEMA << endl;
 
 }

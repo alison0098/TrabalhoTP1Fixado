@@ -213,3 +213,88 @@
 	"TesteUnidade.h"
 	<iostream>
 
+1480647818 source:c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\src\apresentacao.cpp
+	"Apresentacao.h"
+
+1480647818 c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\include\apresentacao.h
+	<iostream>
+	"Dominio.h"
+
+1480647818 c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\include\dominio.h
+	<string>
+	<stdexcept>
+
+1480647818 source:c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\src\dominio.cpp
+	"Dominio.h"
+	<iostream>
+
+1480647818 source:c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\src\entidade.cpp
+	"Entidade.h"
+
+1480647818 c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\include\entidade.h
+	<string>
+	<stdexcept>
+	"Dominio.h"
+
+1480651971 source:c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\src\stubs.cpp
+	"Stubs.h"
+	<string>
+
+1480651941 c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\include\stubs.h
+	"Interfaces.h"
+	<stdexcept>
+	<iostream>
+	<typeinfo>
+
+1480647818 c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\include\interfaces.h
+	"Dominio.h"
+	"Entidade.h"
+	"Comandos.h"
+	<stdexcept>
+
+1480647818 c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\include\comandos.h
+
+1480647818 source:c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\src\testeunidade.cpp
+	"TesteUnidade.h"
+	<iostream>
+
+1480650921 c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\include\testeunidade.h
+	<string>
+	<stdexcept>
+	"Dominio.h"
+
+1480649134 source:c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\src\controladoras.cpp
+	"Controladoras.h"
+	"Entidade.h"
+
+1480651358 c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\include\controladoras.h
+	"Interfaces.h"
+	"Dominio.h"
+	<stdexcept>
+	<iostream>
+	<cstdlib>
+
+1480650961 source:c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\src\main.cpp
+	<iostream>
+	<string>
+	"TesteUnidade.h"
+	"Apresentacao.h"
+	"Interfaces.h"
+	"Stubs.h"
+	"Controladoras.h"
+
+1480651492 source:c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\src\builders.cpp
+	"Builders.h"
+	"Interfaces.h"
+	"Stubs.h"
+
+1480651319 c:\users\bonav\onedrive\documentos\computação\2-2016\sgp\include\builders.h
+	"Interfaces.h"
+	"Dominio.h"
+	"Interfaces.h"
+	"Controladoras.h"
+	"Stubs.h"
+	<stdexcept>
+	<iostream>
+	<cstdlib>
+

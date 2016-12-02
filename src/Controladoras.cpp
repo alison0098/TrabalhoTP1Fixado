@@ -32,24 +32,37 @@ ResultadoAutenticacao CntrIUAutenticacao::autenticar() throw(runtime_error) {
     Senha senha;
     string entrada;
 
+    cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"<<endl;
+    cout << "!!                                            !!"<<endl;
+    cout << "!! @@@@@@@@@@@@ @@@@@@@@@@@@@@@ @@@@@@@@@@@@@ !!"<<endl;
+    cout << "!! @@@@@@@@@@@@ @@@@@@@@@@@@@@@ @@@@@@@@@@@@@ !!"<<endl;
+    cout << "!! @@@@@        @@@@            @@@@     @@@@ !!"<<endl;
+    cout << "!! @@@@@@@@@@@@ @@@@            @@@@     @@@@ !!"<<endl;
+    cout << "!! @@@@@@@@@@@@ @@@@   @@@@@@@@ @@@@     @@@@ !!"<<endl;
+    cout << "!!        @@@@@ @@@@   @@@@@@@@ @@@@@@@@@@@@@ !!"<<endl;
+    cout << "!!        @@@@@ @@@@       @@@@ @@@@@@@@@@@@@ !!"<<endl;
+    cout << "!! @@@@@  @@@@@ @@@@       @@@@ @@@@          !!"<<endl;
+    cout << "!! @@@@@@@@@@@@ @@@@@@@@@@@@@@@ @@@@          !!"<<endl;
+    cout << "!! @@@@@@@@@@@@ @@@@@@@@@@@@@@@ @@@@          !!"<<endl;
+    cout << "!!                                            !!"<<endl;
+    cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"<<endl <<endl;
+
+    cout << "Bem vindo ao Sistema de Gerenciamento de Projetos. Informe seus dados abaixo para autenticacao." <<endl;
+
     // Solicitar matricula e senha.
 
-    while(true) {
-
-        cout << endl << "Autenticacao de usuario." << endl << endl;
-
-        try {
-            cout << "Digite a matricula : ";
-            cin >> entrada;
-            matricula.setMatricula(entrada);
-            cout << "Digite a senha     : ";
-            cin >> entrada;
-            senha.setSenha(entrada);
-            break;
-        }
-        catch (const invalid_argument &exp) {               // catch por referência.
-            cout << endl << "Dado em formato incorreto." << endl;
-        }
+    while(true){
+            try{
+                cout << endl << "Digite sua matricula: ";
+                cin >> entrada;
+                matricula.setMatricula(entrada);
+                cout << "Digite sua senha: ";
+                cin >> entrada;
+                senha.setSenha(entrada);
+                break;
+            }catch(const invalid_argument &exp){
+                cout << endl << "Dado em formato incorreto." << endl ;
+            }
     }
 
     // Solicitar autenticação.

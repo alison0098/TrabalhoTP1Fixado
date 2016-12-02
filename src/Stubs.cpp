@@ -306,7 +306,7 @@ ResultadoDesenvolvedor StubLNDesenvolvedor::incluir(const Desenvolvedor &Desenvo
     return resultado;
 }
 
-ResultadoDesenvolvedor StubLNDesenvolvedor::remover(const Desenvolvedor &desenvolvedor) throw(runtime_error) {
+ResultadoDesenvolvedor StubLNDesenvolvedor::remover(const Matricula &matricula) throw(runtime_error) {
 
     // Apresentar dados recebidos.
 
@@ -325,7 +325,7 @@ ResultadoDesenvolvedor StubLNDesenvolvedor::remover(const Desenvolvedor &desenvo
     return resultado;
 }
 
-ResultadoDesenvolvedor StubLNDesenvolvedor::pesquisar(const Desenvolvedor &desenvolvedor) throw(runtime_error) {
+ResultadoDesenvolvedor StubLNDesenvolvedor::pesquisar(const Matricula &matricula) throw(runtime_error) {
 
     // Apresentar dados recebidos.
 

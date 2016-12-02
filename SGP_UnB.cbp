@@ -34,6 +34,7 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="include/Apresentacao.h" />
+		<Unit filename="include/Builders.h" />
 		<Unit filename="include/Comandos.h" />
 		<Unit filename="include/Controladoras.h" />
 		<Unit filename="include/Dominio.h" />
@@ -42,6 +43,7 @@
 		<Unit filename="include/Stubs.h" />
 		<Unit filename="include/TesteUnidade.h" />
 		<Unit filename="src/Apresentacao.cpp" />
+		<Unit filename="src/Builders.cpp" />
 		<Unit filename="src/Controladoras.cpp" />
 		<Unit filename="src/Dominio.cpp" />
 		<Unit filename="src/Entidade.cpp" />

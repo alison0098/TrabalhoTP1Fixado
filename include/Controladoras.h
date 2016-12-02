@@ -317,9 +317,11 @@ private:
 
     // Método construtor privado inibe a criação de objetos por métodos não membros da classe.
 
-    CntrIUDesenvolvedor(){}
+
 
 public:
+
+    CntrIUDesenvolvedor(){}
 
     static CntrIUDesenvolvedor *instanciar(){
         if(referencia == 0){

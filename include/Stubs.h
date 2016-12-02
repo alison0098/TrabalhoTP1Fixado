@@ -118,9 +118,10 @@ public:
 class StubLNDesenvolvedor:public ILNDesenvolvedor{  // classe implementa a interface.
 
 public:
+
     ResultadoDesenvolvedor incluir(const Desenvolvedor&) throw(runtime_error);
-    ResultadoDesenvolvedor remover(const Desenvolvedor&) throw(runtime_error);
-    ResultadoDesenvolvedor pesquisar(const Desenvolvedor&) throw(runtime_error);
+    ResultadoDesenvolvedor remover(const Matricula&) throw(runtime_error);
+    ResultadoDesenvolvedor pesquisar(const Matricula&) throw(runtime_error);
     ResultadoDesenvolvedor editar(const Desenvolvedor&) throw(runtime_error);
 };
 
